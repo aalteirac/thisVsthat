@@ -1,5 +1,6 @@
 # thisVsthat
-A sample webapp to load and visualize excel file in a Qlik Sense session app. 
+
+A sample webapp to load (drag&drop) and visualize excel file in a Qlik Sense session app. 
 
 Uses Alternate State to compare.
 
@@ -12,5 +13,9 @@ Change var cppath="C:\\Users\\aai\\Documents\\Qlik\\Sense\\Apps\\ThisThat.qvf"; 
 Depending where you have cloned the current project, update the ThisThat.qvf data connection:
 
 ![alt text](https://raw.githubusercontent.com/aalteirac/thisVsthat/master/thumb.png "screen-shot")
+
+Screen-shot:
+
+![alt text](https://raw.githubusercontent.com/aalteirac/thisVsthat/master/thumb2.png "screen-shot")
 
 
