@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body ng-app="thisthatApp" >
+  <div ng-controller="mainController as m" class="container-fluid">
+      <div class="container-fluid">
+          <div class="row-fluid">
+              <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                  <div class="row-fluid">
+                      <div style="margin-top: 10px;" d-and class="item drop"  ondragenter="return false;" ondragover="return false;">
+                      </div>
+                  </div>
+                  <div class="row-fluid">
+                        <div class="">
+                              Show :
+                              <select class="form-control" ng-selected="$first"
+                                      ng-model="operator"
+                                      ng-options="op for op in operators">
+                              </select>of
+                              <select class="form-control" ng-selected="$first"
+                                      ng-model="myField2"
+                                      ng-options="field.qName for field in fields">
+                              </select>
+                                  <!--By : <select class="form-control"  ng-model="m.myField1">-->
+                                        <!--<option  selected hidden />-->
+                                        <!--<option ng-class="" ng-selected="$first" ng-repeat="field in fieldsDim" value="{{field}}">{{field.qName}}</option>-->
+                               <!--</select>-->
+                              Where :
+                              <select class="form-control" ng-selected="$first"
+                                       ng-model="myField1"
+                                       options-class="{ 'selected' : sel==true, 'nrm': sel==false }"
+                                       collection="fieldsDim"
+                                       ng-options="field.qName for field in fieldsDim">
+                              </select>
+                              <p ng-if="loaded==true">Equals:</p>
+                              <!--<category ng-if="loaded==true"></category>-->
+                              <listbox ng-if="loaded==true" field="myField1.qName" app="app"></listbox>
+                        </div>
+                     </div>
+                  <!--<div ng-if="loaded==true" class="row-fluid">-->
+                      <!--<category></category>-->
+                  <!--</div>-->
+              </div>
+              <!--<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">-->
+
+                  <chart ng-if="loaded==true" oper="operator" field-dimension="myField1.qName" field-measure="myField2.qName" app="app"></chart>
+                  <!--<chart color="['#e6850e']" ng-if="loaded==true && states.length>0" context="'State1'" oper="operator" field-dimension="myField1.qName" field-measure="myField2.qName" app="app"></chart>-->
+              <!--</div>-->
+          </div>
+    </div>
+  </div>
+  <!--Popup-->
+  <div id="popup">
+      <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closePopup"><span aria-hidden="true">×</span></button>-->
+      <p id="popupText">
+      </p>
+  </div>
+  </body>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/angular.min.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/highcharts/highcharts-ng.js"></script>
+  <script src="js/highcharts/highcharts.js"></script>
+  <script src="js/highcharts/exporting.js"></script>
+  <script src="js/@qlik/enigma/dist/enigma.min.js"></script>
+  <!--<script src="js/angular2-polyfills.min.js"></script>-->
+  <script src="js/main.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="js/services.js"></script>
+</html>

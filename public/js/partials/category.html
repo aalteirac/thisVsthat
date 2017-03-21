@@ -1,0 +1,16 @@
+<div class="context selections row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+        <button ng-disabled="(hasGlobalSelection()==false) || (states.length==maxStates)  ?true:false" type="button" class="btn  btn-primary" ng-click="addState()" >Create a Context <span class="badge">{{states.length}}/{{maxStates}}</span></button>
+    </div>
+</div>
+<div class="context selections row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+        <button ng-disabled="states.length==0" type="button" ng-click="removeState()" class="btn  btn-primary">Remove Context</button>
+    </div>
+</div>
+<!--<div class="selections row">-->
+    <!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >-->
+        <!--<button ng-disabled="states.length!=maxStates" type="button" class="btn btn-primary">Display Contexts Comparison</button>-->
+    <!--</div>-->
+<!--</div>-->
+

@@ -1,0 +1,76 @@
+.badge{
+   font-size: 9px;
+}
+.selections .btn{
+   font-size: 13px;
+    width: 100%;
+}
+#popup {
+    background-color: #4C5758;
+    color: #FFFFFF;
+    position: fixed;
+    padding: 10px;
+    width: 220px;
+    margin: 10px;
+    top: 0;
+    left: 240px;
+    display: block;
+    border-radius: 5px;
+    z-index: 6;
+}
+.context .btn {
+    background-color: #e6850e;
+}
+.selections{
+	cursor:pointer;
+    margin-top: 3px;
+}
+.mchart,#chart{
+    height: 100%;
+    width: 100%;
+}
+.nv-axis{
+ font-size: smaller;
+}
+.selected {
+    color: #6FDD73;
+    font-weight: bold;
+}
+
+.list{
+    height: calc(100% - 420px);
+    overflow: auto;
+    margin-top: 10px;
+}
+.excluded{
+    color: #CDCFCD;
+    font-style: italic;
+}
+.item.drop-ready{
+    border: red 3px solid;
+}
+
+.item {
+    border: black 3px dashed;
+    height: 100px;
+}
+.drop {
+    color: black;
+}
+select[multiple] {
+    height: 100%;
+    padding:0px;
+    overflow-y: auto
+}
+/*li {*/
+    /*display: inline-block;*/
+    /*height: 100px;*/
+    /*width: 120px;*/
+    /*overflow-y: auto;*/
+    /*border-radius: 4pt;*/
+    /*padding: 6px;*/
+    /*margin: 4px;*/
+    /*cursor: pointer;*/
+    /*overflow: hidden;*/
+    /*text-align: center;*/
+/*}*/

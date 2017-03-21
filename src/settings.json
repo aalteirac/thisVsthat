@@ -1,0 +1,8 @@
+{
+    "client": "../public",
+    "content": "../content",
+    "logs": "../logs",
+    "cors": {
+        "origin": "*"
+    }
+}
