@@ -2,6 +2,8 @@
 
 A sample webapp to load (drag&drop) and visualize excel file in a Qlik Sense session app. 
 
+Great thanks to Elif.T for the original idea !
+
 Uses Alternate State to compare.
 
 npm -install 
