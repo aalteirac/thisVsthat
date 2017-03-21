@@ -8,7 +8,7 @@ npm -install
 
 Install ThisThat.qvf in your desktop
 
-Change var cppath="C:\\Users\\aai\\Documents\\Qlik\\Sense\\Apps\\ThisThat.qvf"; to reflect your user path
+Change in public/js/services.js:  var cppath="C:\\Users\\aai\\Documents\\Qlik\\Sense\\Apps\\ThisThat.qvf"; to reflect your user path
 
 Depending where you have cloned the current project, update the ThisThat.qvf data connection:
 
